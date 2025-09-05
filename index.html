@@ -193,4 +193,44 @@
           <div class="form-group"><textarea name="message" rows="5" placeholder="Mesajınız" required></textarea></div>
           <button type="submit" class="submit-btn" id="submitBtn">Göndər</button>
         </form>
-      </div
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-links">
+        <a href="#features">Xidmətlər</a>
+        <a href="#showcase">Portfolio</a>
+        <a href="#timeline">Layihələr</a>
+        <a href="#contact">Əlaqə</a>
+      </div>
+      <div class="footer-rights">© 2025 Medialand. Bütün hüquqlar qorunur.</div>
+    </div>
+  </footer>
+
+  <script src="templatemo-neural-scripts.js"></script>
+  <script>
+    (function(){
+      const mobileToggle = document.getElementById('mobileToggle');
+      const mobileNav = document.getElementById('mobileNav');
+      if(mobileToggle && mobileNav){
+        mobileToggle.addEventListener('click', ()=>{
+          const open = mobileNav.getAttribute('aria-hidden') === 'false';
+          mobileNav.setAttribute('aria-hidden', String(open));
+          mobileNav.style.display = open ? 'none' : 'block';
+        });
+      }
+
+      window.handleForm = function(e){
+        e.preventDefault();
+        const submitBtn = document.getElementById('submitBtn');
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Göndərildi';
+        setTimeout(()=>{submitBtn.disabled = false; submitBtn.textContent = 'Göndər'; e.target.reset();}, 2000);
+      }
+    })();
+  </script>
+</body>
+</html>
