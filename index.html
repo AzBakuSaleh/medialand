@@ -9,39 +9,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="templatemo-neural-style.css" rel="stylesheet">
-  <style>
-    /* Nömrə və email-i ağ rəngə çevirək */
-    .contact-item a {
-      color: #fff !important;
-      text-decoration: none;
-    }
-
-    /* Portfolio mətni ortala */
-    .hexagon-inner h4, .hexagon-inner p {
-      text-align: center;
-    }
-
-    /* Hero stats cərçivəyə uyğun olsun */
-    .hero-stat-number {
-      font-size: 2rem;
-    }
-    .hero-stat-label {
-      font-size: 1rem;
-    }
-
-    /* Mobil menyu üçün düzəliş */
-    @media (max-width: 768px) {
-      .mobile-nav a {
-        display: block;
-        margin: 0.8rem 0;
-        padding: 0.5rem 1rem;
-        background: rgba(255,255,255,0.05);
-        border-radius: 8px;
-      }
-    }
-  </style>
 </head>
 <body>
+  <!-- Dynamic Background & Visuals -->
   <div class="neural-background" aria-hidden="true"></div>
   <div class="geometric-shapes" aria-hidden="true">
     <div class="shape"></div>
@@ -130,9 +100,8 @@
             <div class="feature-icon">📱</div>
             <h3>SMM idarəçiliyi</h3>
             <p>Strategiya, kontent planı və reklam kampaniyaları ilə sosial şəbəkələrdə nəticə əldə edirik.</p>
-            <img src="images/smm.jpg" alt="SMM xidməti" style="width:100%; margin-top:10px; border-radius:8px;">
           </div>
-          <div class="feature-visual glass"></div>
+          <div class="feature-visual glass"><img src="images/smm.jpg" alt="SMM Xidmətləri"></div>
         </div>
 
         <div class="feature-row">
@@ -140,9 +109,8 @@
             <div class="feature-icon">💻</div>
             <h3>Veb sayt hazırlanması</h3>
             <p>Modern, responsiv və SEO-friendly saytlar dizayn edib həyata keçiririk.</p>
-            <img src="images/web.jpg" alt="Veb sayt xidməti" style="width:100%; margin-top:10px; border-radius:8px;">
           </div>
-          <div class="feature-visual glass"></div>
+          <div class="feature-visual glass"><img src="images/web.jpg" alt="Veb sayt Xidmətləri"></div>
         </div>
 
         <div class="feature-row">
@@ -150,9 +118,8 @@
             <div class="feature-icon">🎨</div>
             <h3>Qrafik dizayn & brendinq</h3>
             <p>Logo, identiklik və vizual üslub ilə brendinizi gücləndiririk.</p>
-            <img src="images/design.jpg" alt="Dizayn xidməti" style="width:100%; margin-top:10px; border-radius:8px;">
           </div>
-          <div class="feature-visual glass"></div>
+          <div class="feature-visual glass"><img src="images/design.jpg" alt="Dizayn Xidmətləri"></div>
         </div>
       </div>
     </div>
@@ -167,8 +134,8 @@
         <div class="hexagon"><div class="hexagon-inner glass"><div class="hexagon-icon">🛡️</div><h4>Brendinq</h4><p>Şəxsiyyət və vizual üslub</p></div></div>
         <div class="hexagon"><div class="hexagon-inner glass"><div class="hexagon-icon">🚀</div><h4>Veb sayt</h4><p>İnteraktiv saytlar</p></div></div>
         <div class="hexagon"><div class="hexagon-inner glass"><div class="hexagon-icon">💎</div><h4>Dizayn</h4><p>Vizual materiallar & UI</p></div></div>
-        <div class="hexagon"><div class="hexagon-inner glass"><div class="hexagon-icon">🎯</div><h4>Reklam</h4><p>Hədəfli reklam kampaniyaları</p></div></div>
-        <div class="hexagon"><div class="hexagon-inner glass"><div class="hexagon-icon">⭐</div><h4>Strategiya</h4><p>Artım və inkişaf strategiyaları</p></div></div>
+        <div class="hexagon"><div class="hexagon-inner glass"><div class="hexagon-icon">🎯</div><h4>Reklamlar</h4><p>Məqsədli reklamlar</p></div></div>
+        <div class="hexagon"><div class="hexagon-inner glass"><div class="hexagon-icon">⭐</div><h4>Strategiya</h4><p>Böyümə strategiyaları</p></div></div>
       </div>
     </div>
   </section>
@@ -206,15 +173,15 @@
         <p>Layihəniz varmı? Gəlin danışaq — sizin üçün həll tapacağıq.</p>
 
         <div class="contact-details">
-          <div class="contact-item"><strong>Email:</strong> <a href="mailto:support@medialand.az">support@medialand.az</a></div>
-          <div class="contact-item"><strong>Telefon:</strong> <a href="tel:+994702907711">+994 70 290 77 11</a></div>
+          <div class="contact-item"><strong>Email:</strong> <a href="mailto:support@medialand.az" style="color:#fff;">support@medialand.az</a></div>
+          <div class="contact-item"><strong>Telefon:</strong> <a href="tel:+994702907711" style="color:#fff;">+994 70 290 77 11</a></div>
           <div class="contact-item"><strong>Ünvan:</strong> Bakı, Azərbaycan</div>
         </div>
 
         <div class="social-links">
-          <a href="#" aria-label="Instagram">Instagram</a>
-          <a href="#" aria-label="Facebook">Facebook</a>
-          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+          <a href="#" aria-label="Instagram"><img src="icons/instagram.svg" alt="Instagram"></a>
+          <a href="#" aria-label="Facebook"><img src="icons/facebook.svg" alt="Facebook"></a>
+          <a href="#" aria-label="LinkedIn"><img src="icons/linkedin.svg" alt="LinkedIn"></a>
         </div>
       </div>
 
@@ -224,44 +191,6 @@
           <div class="form-group"><input type="email" name="email" placeholder="Email" required></div>
           <div class="form-group"><input type="text" name="subject" placeholder="Mövzu" required></div>
           <div class="form-group"><textarea name="message" rows="5" placeholder="Mesajınız" required></textarea></div>
-          <button type="submit" class="submit-btn">Göndər</button>
+          <button type="submit" class="submit-btn" id="submitBtn">Göndər</button>
         </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container footer-content">
-      <div class="footer-links">
-        <a href="#features">Xidmətlər</a>
-        <a href="#showcase">Portfolio</a>
-        <a href="#timeline">Layihələr</a>
-        <a href="#contact">Əlaqə</a>
-      </div>
-      <div class="footer-rights">© 2025 Medialand. Bütün hüquqlar qorunur.</div>
-    </div>
-  </footer>
-
-  <script src="templatemo-neural-scripts.js"></script>
-  <script>
-    (function(){
-      const mobileToggle = document.getElementById('mobileToggle');
-      const mobileNav = document.getElementById('mobileNav');
-      if(mobileToggle && mobileNav){
-        mobileToggle.addEventListener('click', ()=>{
-          const open = mobileNav.getAttribute('aria-hidden') === 'false';
-          mobileNav.setAttribute('aria-hidden', String(open));
-          mobileNav.style.display = open ? 'none' : 'block';
-        });
-      }
-
-      window.handleForm = function(e){
-        e.preventDefault();
-        alert('Mesajınız alınmışdır. Tezliklə əlaqə saxlayacağıq.');
-        e.target.reset();
-      }
-    })();
-  </script>
-</body>
-</html>
+      </div
