@@ -9,20 +9,52 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="templatemo-neural-style.css" rel="stylesheet">
+  <style>
+    /* Ümumi düzəlişlər */
+    body { font-family: 'Inter', sans-serif; }
+    a { text-decoration: none; }
+    .hero-stat span { display: block; text-align: center; }
+    .contact-info a { color: #fff; text-decoration: none; }
+    .hexagon-inner, .hexagon-inner h4, .hexagon-inner p { text-align: center; }
+    .social-links a { display:inline-block; margin-right:10px; color:#fff; font-size:1.2rem; }
+    .feature-content img { width:100%; max-width:250px; margin-top:10px; border-radius:10px; }
+
+    /* Hexagon mərkəzləşdirmə */
+    .hexagon-container { display:flex; flex-wrap:wrap; justify-content:center; gap:20px; }
+    .hexagon { flex:1 1 200px; max-width:200px; }
+
+    /* Hero-stat responsive */
+    .hero-stats { display:flex; flex-wrap:wrap; justify-content:center; gap:20px; margin-top:20px; }
+    .hero-stat { flex:1 1 120px; background: rgba(255,255,255,0.1); padding:15px; border-radius:10px; color:#fff; }
+
+    /* Features grid responsive */
+    .diagonal-grid { display:flex; flex-direction:column; gap:30px; }
+    @media(min-width:768px){
+      .diagonal-grid .feature-row { display:flex; align-items:center; gap:20px; }
+      .diagonal-grid .feature-row:nth-child(even) { flex-direction:row-reverse; }
+    }
+
+    /* Contact form responsive */
+    .contact-container { display:flex; flex-direction:column; gap:20px; }
+    @media(min-width:768px){
+      .contact-container { flex-direction:row; justify-content:space-between; }
+    }
+
+    /* Mobile menu fix */
+    .mobile-nav { display:none; flex-direction:column; background: rgba(0,0,0,0.9); padding:15px; }
+    @media(max-width:767px){
+      .nav-links { display:none; }
+    }
+  </style>
 </head>
 <body>
-  <!-- Dynamic Background & Visuals -->
+  <!-- Background & shapes -->
   <div class="neural-background" aria-hidden="true"></div>
   <div class="geometric-shapes" aria-hidden="true">
-    <div class="shape"></div>
-    <div class="shape"></div>
-    <div class="shape"></div>
-    <div class="shape"></div>
+    <div class="shape"></div><div class="shape"></div><div class="shape"></div><div class="shape"></div>
   </div>
   <div class="neural-lines" aria-hidden="true">
-    <div class="neural-line"></div>
-    <div class="neural-line"></div>
-    <div class="neural-line"></div>
+    <div class="neural-line"></div><div class="neural-line"></div><div class="neural-line"></div>
   </div>
 
   <!-- Header -->
@@ -100,8 +132,9 @@
             <div class="feature-icon">📱</div>
             <h3>SMM idarəçiliyi</h3>
             <p>Strategiya, kontent planı və reklam kampaniyaları ilə sosial şəbəkələrdə nəticə əldə edirik.</p>
+            <img src="smm.jpg" alt="SMM xidməti" />
           </div>
-          <div class="feature-visual glass"><img src="images/smm.jpg" alt="SMM Xidmətləri"></div>
+          <div class="feature-visual glass"></div>
         </div>
 
         <div class="feature-row">
@@ -109,8 +142,9 @@
             <div class="feature-icon">💻</div>
             <h3>Veb sayt hazırlanması</h3>
             <p>Modern, responsiv və SEO-friendly saytlar dizayn edib həyata keçiririk.</p>
+            <img src="web.jpg" alt="Veb sayt xidməti" />
           </div>
-          <div class="feature-visual glass"><img src="images/web.jpg" alt="Veb sayt Xidmətləri"></div>
+          <div class="feature-visual glass"></div>
         </div>
 
         <div class="feature-row">
@@ -118,8 +152,9 @@
             <div class="feature-icon">🎨</div>
             <h3>Qrafik dizayn & brendinq</h3>
             <p>Logo, identiklik və vizual üslub ilə brendinizi gücləndiririk.</p>
+            <img src="design.jpg" alt="Qrafik dizayn xidməti" />
           </div>
-          <div class="feature-visual glass"><img src="images/design.jpg" alt="Dizayn Xidmətləri"></div>
+          <div class="feature-visual glass"></div>
         </div>
       </div>
     </div>
@@ -133,9 +168,9 @@
         <div class="hexagon"><div class="hexagon-inner glass"><div class="hexagon-icon">🔮</div><h4>Vizual Kampaniya</h4><p>Sosial kampaniya vizualları</p></div></div>
         <div class="hexagon"><div class="hexagon-inner glass"><div class="hexagon-icon">🛡️</div><h4>Brendinq</h4><p>Şəxsiyyət və vizual üslub</p></div></div>
         <div class="hexagon"><div class="hexagon-inner glass"><div class="hexagon-icon">🚀</div><h4>Veb sayt</h4><p>İnteraktiv saytlar</p></div></div>
-        <div class="hexagon"><div class="hexagon-inner glass"><div class="hexagon-icon">💎</div><h4>Dizayn</h4><p>Vizual materiallar & UI</p></div></div>
-        <div class="hexagon"><div class="hexagon-inner glass"><div class="hexagon-icon">🎯</div><h4>Reklamlar</h4><p>Məqsədli reklamlar</p></div></div>
-        <div class="hexagon"><div class="hexagon-inner glass"><div class="hexagon-icon">⭐</div><h4>Strategiya</h4><p>Böyümə strategiyaları</p></div></div>
+        <div class="hexagon"><div class="hexagon-inner glass"><div class="hexagon-icon">💎</div><h4>Dizayn</h4><p>Vizual materiallar və UI</p></div></div>
+        <div class="hexagon"><div class="hexagon-inner glass"><div class="hexagon-icon">🎯</div><h4>Reklam</h4><p>Hədəfli kampaniyalar</p></div></div>
+        <div class="hexagon"><div class="hexagon-inner glass"><div class="hexagon-icon">⭐</div><h4>Strategiya</h4><p>Artım strategiyaları</p></div></div>
       </div>
     </div>
   </section>
@@ -146,17 +181,14 @@
       <h2 class="section-title">Layihələrimiz</h2>
       <div class="timeline-container">
         <div class="timeline-line" aria-hidden="true"></div>
-
         <div class="timeline-item">
           <div class="timeline-content glass"><div class="timeline-year">2024</div><h4>Yaradılış</h4><p>Medialand fəaliyyətə başladı və ilk müştərilərimizi qazandıq.</p></div>
           <div class="timeline-dot"></div>
         </div>
-
         <div class="timeline-item">
           <div class="timeline-content glass"><div class="timeline-year">2025</div><h4>İnkişaf</h4><p>Xidmət portfelimizi genişləndirdik və rəqəmsal marketinq sahəsində uğurlar əldə etdik.</p></div>
           <div class="timeline-dot"></div>
         </div>
-
         <div class="timeline-item">
           <div class="timeline-content glass"><div class="timeline-year">2026</div><h4>Gələcək</h4><p>Daha çox beynəlxalq layihələr və innovativ həllər.</p></div>
           <div class="timeline-dot"></div>
@@ -171,17 +203,15 @@
       <div class="contact-info glass">
         <h3>Bizimlə əlaqə</h3>
         <p>Layihəniz varmı? Gəlin danışaq — sizin üçün həll tapacağıq.</p>
-
         <div class="contact-details">
-          <div class="contact-item"><strong>Email:</strong> <a href="mailto:support@medialand.az" style="color:#fff;">support@medialand.az</a></div>
-          <div class="contact-item"><strong>Telefon:</strong> <a href="tel:+994702907711" style="color:#fff;">+994 70 290 77 11</a></div>
+          <div class="contact-item"><strong>Email:</strong> <a href="mailto:support@medialand.az">support@medialand.az</a></div>
+          <div class="contact-item"><strong>Telefon:</strong> <a href="tel:+994702907711">+994 70 290 77 11</a></div>
           <div class="contact-item"><strong>Ünvan:</strong> Bakı, Azərbaycan</div>
         </div>
-
         <div class="social-links">
-          <a href="#" aria-label="Instagram"><img src="icons/instagram.svg" alt="Instagram"></a>
-          <a href="#" aria-label="Facebook"><img src="icons/facebook.svg" alt="Facebook"></a>
-          <a href="#" aria-label="LinkedIn"><img src="icons/linkedin.svg" alt="LinkedIn"></a>
+          <a href="#" aria-label="Instagram">📷</a>
+          <a href="#" aria-label="Facebook">📘</a>
+          <a href="#" aria-label="LinkedIn">💼</a>
         </div>
       </div>
 
@@ -191,7 +221,7 @@
           <div class="form-group"><input type="email" name="email" placeholder="Email" required></div>
           <div class="form-group"><input type="text" name="subject" placeholder="Mövzu" required></div>
           <div class="form-group"><textarea name="message" rows="5" placeholder="Mesajınız" required></textarea></div>
-          <button type="submit" class="submit-btn" id="submitBtn">Göndər</button>
+          <button type="submit" class="submit-btn">Göndər</button>
         </form>
       </div>
     </div>
@@ -219,16 +249,16 @@
         mobileToggle.addEventListener('click', ()=>{
           const open = mobileNav.getAttribute('aria-hidden') === 'false';
           mobileNav.setAttribute('aria-hidden', String(open));
-          mobileNav.style.display = open ? 'none' : 'block';
+          mobileNav.style.display = open ? 'none' : 'flex';
         });
       }
 
       window.handleForm = function(e){
         e.preventDefault();
-        const submitBtn = document.getElementById('submitBtn');
-        submitBtn.disabled = true;
-        submitBtn.textContent = 'Göndərildi';
-        setTimeout(()=>{submitBtn.disabled = false; submitBtn.textContent = 'Göndər'; e.target.reset();}, 2000);
+        const btn = e.target.querySelector('.submit-btn');
+        btn.textContent = 'Göndərildi';
+        setTimeout(()=>{ btn.textContent = 'Göndər'; }, 3000);
+        e.target.reset();
       }
     })();
   </script>
